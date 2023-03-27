@@ -22,7 +22,7 @@ namespace CRUD
             lbPass.Visible = false;
             lbPasswordMatch.Visible = false;
             lbUserCheck.Visible = false;
-            // hello
+            
         }
 
         private string UserCheck()

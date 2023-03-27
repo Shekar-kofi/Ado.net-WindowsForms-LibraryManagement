@@ -146,8 +146,8 @@ namespace CRUD
             {
                 this.Hide();
                 MessageBox.Show(@"Login Success");
-                var libary = new Form1();
-                libary.Show();
+                var library = new Form1();
+                library.Show();
             }
             else
             {

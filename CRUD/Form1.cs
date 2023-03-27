@@ -81,23 +81,35 @@ namespace CRUD
         private void button1_Click(object sender, EventArgs e)
         {
             
-                if (!string.IsNullOrEmpty(tbId.Text))
+                if (!string.IsNullOrEmpty(tbId.Text) && !string.IsNullOrEmpty(tbAuthor.Text) && 
+                    !string.IsNullOrEmpty(tbTitle.Text) && (dateTimePicker1.Value<dateTimePicker2.Value))
                 {
-                 AddBook();   
+                 AddBook();
+                 ShowData();
+                 ClearForm();
                 }
-                else
+                else if (string.IsNullOrEmpty(tbId.Text) || string.IsNullOrEmpty(tbTitle.Text) || 
+                          string.IsNullOrEmpty(tbAuthor.Text) || (dateTimePicker1.Value>dateTimePicker2.Value))
                 {
-                    MessageBox.Show(@"Book Id cannot be null");
+                    if (string.IsNullOrEmpty(tbId.Text))
+                    {
+                        MessageBox.Show(@"Book Id cannot be empty");
+                    }else if (string.IsNullOrEmpty(tbTitle.Text))
+                    {
+                        MessageBox.Show(@"Book Title cannot be empty");
+                    }else if (string.IsNullOrEmpty(tbAuthor.Text))
+                    {
+                        MessageBox.Show(@"Book Author cannot be empty");
+                    }else if ((dateTimePicker1.Value>dateTimePicker2.Value))
+                    {
+                        MessageBox.Show(@"Invalid date selection");
+                    }
+                    
                 }
                 
-             
-            
-
-                ShowData();
-                ClearForm();
 
 
-                MessageBox.Show(@"Record inserted successfully");
+                
         }
 
         private void button4_Click(object sender, EventArgs e)

@@ -49,12 +49,7 @@ namespace CRUD
         }
 
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            ShowData();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void AddBook()
         {
             try
             {
@@ -74,12 +69,35 @@ namespace CRUD
             {
                 MessageBox.Show(exception.Message);
             }
+            
+        }
 
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
             ShowData();
-            ClearForm();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+                if (!string.IsNullOrEmpty(tbId.Text))
+                {
+                 AddBook();   
+                }
+                else
+                {
+                    MessageBox.Show(@"Book Id cannot be null");
+                }
+                
+             
+            
+
+                ShowData();
+                ClearForm();
 
 
-            MessageBox.Show(@"Record inserted successfully");
+                MessageBox.Show(@"Record inserted successfully");
         }
 
         private void button4_Click(object sender, EventArgs e)

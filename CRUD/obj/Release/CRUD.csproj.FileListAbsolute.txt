@@ -106,3 +106,4 @@ C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Release\System.ServiceModel.NetTcp.
 C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Release\System.ServiceModel.Primitives.pdb
 C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Release\System.ServiceModel.Security.pdb
 C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Release\System.Web.Services.Description.pdb
+C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Release\ZstdNet.dll

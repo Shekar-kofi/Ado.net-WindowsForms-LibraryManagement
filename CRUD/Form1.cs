@@ -197,12 +197,12 @@ namespace CRUD
             {
                 Application.Exit();
             }
-            else
-            {
-                Hide();
-                var login = new Login();
-                login.ShowDialog();
-            }
+            // else
+            // {
+            //     Hide();
+            //     var login = new Login();
+            //     login.ShowDialog();
+            // }
         }
     }
 }

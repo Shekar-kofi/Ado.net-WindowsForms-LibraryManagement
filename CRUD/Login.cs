@@ -20,6 +20,7 @@ namespace CRUD
             lbLoginpass.Visible = false;
             lbInvalid.Visible = false;
             lbNotRegistered.Visible = false;
+            btPassHide.Hide();
         }
 
 
@@ -55,7 +56,6 @@ namespace CRUD
 
         }
         
-        
         private string EmailMatch()
         {
             var emailPattern = @"^([a-zA-Z\d\.-]+)@([a-zA-Z]+)\.([a-zA-Z]{2,5})(\.[a-zA-Z]{2,5})?$";
@@ -76,7 +76,7 @@ namespace CRUD
             {
                 connection.Open();
                 string passwordverify =
-                    $"select count(*) from lmsusers where Usermail='{tbMailLogin.Text}' and Password='{tbPassLogin.Text}'";
+                    $"select count(*) from lmsusers where Usermail='{tbMailLogin.Text}' and binary Password='{tbPassLogin.Text}'";
                 var cmd = new MySqlCommand(passwordverify, connection);
                 object passwordcheck = cmd.ExecuteScalar();
                 var confirmuser = Convert.ToInt32(passwordcheck);
@@ -98,6 +98,7 @@ namespace CRUD
 
         private void tbMailLogin_TextChanged(object sender, EventArgs e)
         { 
+            
             if (!string.IsNullOrEmpty(UserCheck()) && !string.IsNullOrEmpty(EmailMatch())) 
             {
                     errorProvider1.SetError(tbMailLogin,"");
@@ -157,5 +158,26 @@ namespace CRUD
 
             } 
         }
+
+        private void btShowPass_Click(object sender, EventArgs e)
+        {
+            tbPassLogin.UseSystemPasswordChar = false;
+            btShowPass.Hide();
+            btPassHide.Show();
+        }
+
+
+        private void btPassHide_Click(object sender, EventArgs e)
+        {
+            tbPassLogin.UseSystemPasswordChar = true;
+            btPassHide.Hide();
+            btShowPass.Show();
+            
+        }
+
+
+        
+
+        
     }
 }

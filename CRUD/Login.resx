@@ -121,6 +121,25 @@
     <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btPassHide.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
+        dAAAEnQB3mYfeAAAAO1JREFUOE/NkyFuAlEURUcAO8AXh2EfOLonEMVCQGERbIDq7qJ1lfUNAgKBcwh3
+        MhRqJghucsTw3r+5//1H8TQawBIa568a6sA3rECTPnzC9sIXzKEH/6oLNmvSAg+8wxp+4QgHmIL1KzXB
+        ZpskSaI2fEDq9nqm1BhS3ECuY9MIXkGTJJE3OOsFdpCC7s5kDzEZgqqm9Ixnbwy8s/oBv2Oi7hoo46Rg
+        TOMaW5MkcSYONn3lFdTfITowTVT1ie1bgCmTqpRPMwGfKkk0FQfrbzG5OVyVyzIDlyeL5FIZv7pstZTr
+        uPa1pYn/nUeoKE54NVOMIE9JyAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btShowPass.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
+        dAAAEnQB3mYfeAAAAJtJREFUOE/dkrsNwjAUAN3ABvQswC6MlRoEo4Q6WyQb0FMlEoI75BeZIhS4gpNO
+        enqf5CV2+k92eMIBx6zxGa0tssYj3vGBN7xgm2Nz1uyx940V2myTdrjBwNhc1O11ZqbBKPo2B/Z4zRqb
+        i03UmRdbnDAKriwORs5Yyi2dcbb+AVL1CVL9E8WjOeBXx1gSF6nH8iKZ+3iRfpKUnh1vU3jLndC8AAAA
+        AElFTkSuQmCC
+</value>
+  </data>
   <data name="errorProvider1.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAkAAAAAAAEAIADrlQAAlgAAAICAAAABACAAKAgBAIGWAABgYAAAAQAgAKiUAACpngEASEgAAAEA

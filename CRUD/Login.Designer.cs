@@ -44,6 +44,8 @@ namespace CRUD
             this.lbInvalid = new System.Windows.Forms.Label();
             this.lbLoginpass = new System.Windows.Forms.Label();
             this.lbNotRegistered = new System.Windows.Forms.Label();
+            this.btShowPass = new System.Windows.Forms.Button();
+            this.btPassHide = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
             this.SuspendLayout();
@@ -146,11 +148,42 @@ namespace CRUD
             this.lbNotRegistered.TabIndex = 9;
             this.lbNotRegistered.Text = "Email not registerd";
             // 
+            // btShowPass
+            // 
+            this.btShowPass.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btShowPass.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btShowPass.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btShowPass.Image = ((System.Drawing.Image)(resources.GetObject("btShowPass.Image")));
+            this.btShowPass.Location = new System.Drawing.Point(560, 185);
+            this.btShowPass.Name = "btShowPass";
+            this.btShowPass.Size = new System.Drawing.Size(46, 36);
+            this.btShowPass.TabIndex = 10;
+            this.btShowPass.UseVisualStyleBackColor = false;
+            this.btShowPass.Click += new System.EventHandler(this.btShowPass_Click);
+            // 
+            // btPassHide
+            // 
+            this.btPassHide.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btPassHide.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btPassHide.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btPassHide.FlatAppearance.BorderSize = 0;
+            this.btPassHide.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btPassHide.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btPassHide.Image = ((System.Drawing.Image)(resources.GetObject("btPassHide.Image")));
+            this.btPassHide.Location = new System.Drawing.Point(560, 185);
+            this.btPassHide.Name = "btPassHide";
+            this.btPassHide.Size = new System.Drawing.Size(46, 36);
+            this.btPassHide.TabIndex = 11;
+            this.btPassHide.UseVisualStyleBackColor = false;
+            this.btPassHide.Click += new System.EventHandler(this.btPassHide_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btPassHide);
+            this.Controls.Add(this.btShowPass);
             this.Controls.Add(this.lbNotRegistered);
             this.Controls.Add(this.lbLoginpass);
             this.Controls.Add(this.lbInvalid);
@@ -160,6 +193,7 @@ namespace CRUD
             this.Controls.Add(this.tbMailLogin);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Name = "Login";
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Login_Load);
@@ -168,6 +202,10 @@ namespace CRUD
             this.ResumeLayout(false);
             this.PerformLayout();
         }
+
+        private System.Windows.Forms.Button btPassHide;
+
+        private System.Windows.Forms.Button btShowPass;
 
         private System.Windows.Forms.Label lbNotRegistered;
 

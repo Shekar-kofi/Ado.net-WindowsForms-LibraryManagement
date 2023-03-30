@@ -105,3 +105,4 @@ C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Debug\System.ServiceProcess.Service
 C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Debug\System.Text.Encoding.CodePages.xml
 C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Debug\System.Threading.AccessControl.xml
 C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Debug\System.Web.Services.Description.pdb
+C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Debug\CRUD.pdb

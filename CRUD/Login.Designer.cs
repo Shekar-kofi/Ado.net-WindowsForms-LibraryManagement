@@ -46,6 +46,7 @@ namespace CRUD
             this.lbNotRegistered = new System.Windows.Forms.Label();
             this.btShowPass = new System.Windows.Forms.Button();
             this.btPassHide = new System.Windows.Forms.Button();
+            this.linkForgot = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
             this.SuspendLayout();
@@ -177,11 +178,24 @@ namespace CRUD
             this.btPassHide.UseVisualStyleBackColor = false;
             this.btPassHide.Click += new System.EventHandler(this.btPassHide_Click);
             // 
+            // linkForgot
+            // 
+            this.linkForgot.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkForgot.LinkColor = System.Drawing.Color.Navy;
+            this.linkForgot.Location = new System.Drawing.Point(301, 251);
+            this.linkForgot.Name = "linkForgot";
+            this.linkForgot.Size = new System.Drawing.Size(148, 25);
+            this.linkForgot.TabIndex = 12;
+            this.linkForgot.TabStop = true;
+            this.linkForgot.Text = "Forgot Password ?";
+            this.linkForgot.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkForgot_LinkClicked);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.linkForgot);
             this.Controls.Add(this.btPassHide);
             this.Controls.Add(this.btShowPass);
             this.Controls.Add(this.lbNotRegistered);
@@ -193,7 +207,7 @@ namespace CRUD
             this.Controls.Add(this.tbMailLogin);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Name = "Login";
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Login_Load);
@@ -202,6 +216,8 @@ namespace CRUD
             this.ResumeLayout(false);
             this.PerformLayout();
         }
+
+        private System.Windows.Forms.LinkLabel linkForgot;
 
         private System.Windows.Forms.Button btPassHide;
 

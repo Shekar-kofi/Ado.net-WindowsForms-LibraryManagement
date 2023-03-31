@@ -106,3 +106,11 @@ C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Debug\System.Text.Encoding.CodePage
 C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Debug\System.Threading.AccessControl.xml
 C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Debug\System.Web.Services.Description.pdb
 C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Debug\CRUD.pdb
+C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Debug\MailKit.dll
+C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Debug\MimeKit.dll
+C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Debug\ZstdNet.dll
+C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Debug\MailKit.pdb
+C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Debug\MailKit.xml
+C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Debug\MimeKit.pdb
+C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Debug\MimeKit.xml
+C:\Users\ShekarC\RiderProjects\CRUD\CRUD\obj\Debug\CRUD.ForgotPassword.resources

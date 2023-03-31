@@ -1,8 +1,12 @@
 ﻿using System;
 using System.Drawing;
+using System.Net.Mail;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
+using MimeKit;
+using MailKit.Net.Smtp;
 using MySqlConnector;
+using SmtpClient = MailKit.Net.Smtp.SmtpClient;
 
 namespace CRUD
 {
@@ -10,6 +14,9 @@ namespace CRUD
     { 
         private readonly string _connectionString =
             "server=localhost;user=root;database=lms;port=3306;password=Shekar@2901";
+
+        private static int _loginCount = 0;
+        
         public Login()
         {
             InitializeComponent();
@@ -21,6 +28,7 @@ namespace CRUD
             lbInvalid.Visible = false;
             lbNotRegistered.Visible = false;
             btPassHide.Hide();
+            linkForgot.Visible = false;
         }
 
 
@@ -96,6 +104,34 @@ namespace CRUD
         }
 
 
+        private void PasswordRecover()
+        {
+            MimeMessage message = new MimeMessage();
+            message.From.Add(new MailboxAddress("Recover password test","shekarchepala119@gmail.com"));
+            message.To.Add(MailboxAddress.Parse("shekar.chepala@amzur.com"));
+            
+            message.Subject = "Password Recover Test";
+            message.Body = new TextPart("Plain")
+            {
+                Text = "hello this is test"
+            };
+
+            SmtpClient client = new SmtpClient();
+            try
+            { 
+                client.Connect("smtp.gmail.com",465,true);
+                client.Authenticate("shekarchepala119@gmail.com","irtbkizwkcvwisrv");
+                client.Send(message); 
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            client.Disconnect(true);
+            client.Dispose();
+        }
+
+
         private void tbMailLogin_TextChanged(object sender, EventArgs e)
         { 
             
@@ -124,36 +160,60 @@ namespace CRUD
         }
 
         private void tbPassLogin_TextChanged(object sender, EventArgs e)
-        { 
-            if (!string.IsNullOrEmpty(UserPasswordVerify())) 
+        {
+            if (string.IsNullOrEmpty(tbPassLogin.Text))
             {
-                    errorProvider1.SetError(tbPassLogin,"");
-                    errorProvider2.SetError(tbPassLogin,"Password matched");
-                    lbLoginpass.Visible = false; 
+                lbLoginpass.Visible = false;
+                errorProvider1.SetError(tbPassLogin,"");
             }
-            else 
-            {
-                    lbLoginpass.Visible = true;
-                    lbLoginpass.ForeColor = Color.Red;
-                    errorProvider1.SetError(tbPassLogin,"password does not match");
-                    errorProvider2.SetError(tbPassLogin,""); 
-            } 
+            
+            // if (!string.IsNullOrEmpty(UserPasswordVerify())) 
+            // {
+            //         errorProvider1.SetError(tbPassLogin,"");
+            //         errorProvider2.SetError(tbPassLogin,"Password matched");
+            //         lbLoginpass.Visible = false; 
+            // }
+            // else 
+            // {
+            //         lbLoginpass.Visible = true;
+            //         lbLoginpass.ForeColor = Color.Red;
+            //         errorProvider1.SetError(tbPassLogin,"password does not match");
+            //         errorProvider2.SetError(tbPassLogin,""); 
+            // } 
         }
 
+        
+        
 
-        private void btLogin_Click(object sender, EventArgs e)
-        { 
-            if (!string.IsNullOrEmpty(UserPasswordVerify()))
+
+            private void btLogin_Click(object sender, EventArgs e) 
+            {
+                if (!string.IsNullOrEmpty(UserPasswordVerify()))
             {
                 this.Hide();
                 MessageBox.Show(@"Login Success");
                 var library = new Form1();
                 library.Show();
+            }else if (string.IsNullOrEmpty(tbMailLogin.Text) )
+            {
+                MessageBox.Show(@"Please enter the email address");
+            }else if (string.IsNullOrEmpty(tbPassLogin.Text))
+            {
+                MessageBox.Show(@"Please enter the Password");
             }
             else
             {
+                _loginCount++;
+                if (_loginCount>2)
+                {
+                    linkForgot.Visible = true;
+                }
                 tbMailLogin_TextChanged(sender, e);
-                tbPassLogin_TextChanged(sender, e);
+                lbLoginpass.Visible = true;
+                lbLoginpass.ForeColor = Color.Red;
+                errorProvider1.SetError(tbPassLogin,"password does not match");
+                errorProvider2.SetError(tbPassLogin,""); 
+                // tbPassLogin_TextChanged(sender, e);
                 MessageBox.Show(@"Invalid Email address or Password.Please try again");
 
             } 
@@ -164,6 +224,7 @@ namespace CRUD
             tbPassLogin.UseSystemPasswordChar = false;
             btShowPass.Hide();
             btPassHide.Show();
+            
         }
 
 
@@ -176,8 +237,12 @@ namespace CRUD
         }
 
 
-        
-
-        
+        private void linkForgot_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            var forgotPassword = new ForgotPassword();
+            forgotPassword.Show();
+            
+        }
     }
 }

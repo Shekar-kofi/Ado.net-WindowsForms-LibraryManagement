@@ -107,3 +107,10 @@ C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Release\System.ServiceModel.Primiti
 C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Release\System.ServiceModel.Security.pdb
 C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Release\System.Web.Services.Description.pdb
 C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Release\ZstdNet.dll
+C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Release\MailKit.dll
+C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Release\MimeKit.dll
+C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Release\MailKit.pdb
+C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Release\MailKit.xml
+C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Release\MimeKit.pdb
+C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Release\MimeKit.xml
+C:\Users\ShekarC\RiderProjects\CRUD\CRUD\obj\Release\CRUD.ForgotPassword.resources

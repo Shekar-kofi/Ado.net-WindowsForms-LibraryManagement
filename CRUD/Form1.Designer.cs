@@ -51,6 +51,7 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -156,9 +157,9 @@
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(607, 79);
+            this.button1.Location = new System.Drawing.Point(607, 50);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(187, 38);
+            this.button1.Size = new System.Drawing.Size(216, 38);
             this.button1.TabIndex = 13;
             this.button1.Text = "Add Book";
             this.button1.UseVisualStyleBackColor = false;
@@ -170,9 +171,9 @@
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button2.Location = new System.Drawing.Point(607, 136);
+            this.button2.Location = new System.Drawing.Point(607, 106);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(187, 38);
+            this.button2.Size = new System.Drawing.Size(216, 38);
             this.button2.TabIndex = 14;
             this.button2.Text = "Update Book";
             this.button2.UseVisualStyleBackColor = false;
@@ -184,9 +185,9 @@
             this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button3.Location = new System.Drawing.Point(607, 198);
+            this.button3.Location = new System.Drawing.Point(607, 164);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(187, 38);
+            this.button3.Size = new System.Drawing.Size(216, 38);
             this.button3.TabIndex = 15;
             this.button3.Text = "Delete Book";
             this.button3.UseVisualStyleBackColor = false;
@@ -198,9 +199,9 @@
             this.btReset.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btReset.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btReset.Location = new System.Drawing.Point(607, 265);
+            this.btReset.Location = new System.Drawing.Point(607, 222);
             this.btReset.Name = "btReset";
-            this.btReset.Size = new System.Drawing.Size(187, 38);
+            this.btReset.Size = new System.Drawing.Size(216, 38);
             this.btReset.TabIndex = 16;
             this.btReset.Text = "Reset";
             this.btReset.UseVisualStyleBackColor = false;
@@ -212,9 +213,9 @@
             this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button5.Location = new System.Drawing.Point(607, 335);
+            this.button5.Location = new System.Drawing.Point(607, 340);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(187, 38);
+            this.button5.Size = new System.Drawing.Size(216, 38);
             this.button5.TabIndex = 17;
             this.button5.Text = "Exit";
             this.button5.UseVisualStyleBackColor = false;
@@ -268,12 +269,27 @@
             this.dateTimePicker2.Size = new System.Drawing.Size(282, 22);
             this.dateTimePicker2.TabIndex = 20;
             // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.SystemColors.Highlight;
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button4.Location = new System.Drawing.Point(607, 285);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(216, 38);
+            this.button4.TabIndex = 21;
+            this.button4.Text = "Change Password";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(1005, 655);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.dataGridView1);
@@ -302,6 +318,8 @@
             this.ResumeLayout(false);
             this.PerformLayout();
         }
+
+        private System.Windows.Forms.Button button4;
 
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;

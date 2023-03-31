@@ -75,7 +75,7 @@ namespace CRUD
             this.tbMailLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbMailLogin.Location = new System.Drawing.Point(301, 76);
             this.tbMailLogin.Name = "tbMailLogin";
-            this.tbMailLogin.Size = new System.Drawing.Size(305, 36);
+            this.tbMailLogin.Size = new System.Drawing.Size(357, 36);
             this.tbMailLogin.TabIndex = 3;
             this.tbMailLogin.TextChanged += new System.EventHandler(this.tbMailLogin_TextChanged);
             // 
@@ -108,7 +108,7 @@ namespace CRUD
             this.tbPassLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbPassLogin.Location = new System.Drawing.Point(301, 185);
             this.tbPassLogin.Name = "tbPassLogin";
-            this.tbPassLogin.Size = new System.Drawing.Size(305, 36);
+            this.tbPassLogin.Size = new System.Drawing.Size(357, 36);
             this.tbPassLogin.TabIndex = 6;
             this.tbPassLogin.UseSystemPasswordChar = true;
             this.tbPassLogin.TextChanged += new System.EventHandler(this.tbPassLogin_TextChanged);
@@ -155,7 +155,7 @@ namespace CRUD
             this.btShowPass.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btShowPass.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btShowPass.Image = ((System.Drawing.Image)(resources.GetObject("btShowPass.Image")));
-            this.btShowPass.Location = new System.Drawing.Point(560, 185);
+            this.btShowPass.Location = new System.Drawing.Point(612, 185);
             this.btShowPass.Name = "btShowPass";
             this.btShowPass.Size = new System.Drawing.Size(46, 36);
             this.btShowPass.TabIndex = 10;
@@ -171,7 +171,7 @@ namespace CRUD
             this.btPassHide.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btPassHide.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btPassHide.Image = ((System.Drawing.Image)(resources.GetObject("btPassHide.Image")));
-            this.btPassHide.Location = new System.Drawing.Point(560, 185);
+            this.btPassHide.Location = new System.Drawing.Point(612, 185);
             this.btPassHide.Name = "btPassHide";
             this.btPassHide.Size = new System.Drawing.Size(46, 36);
             this.btPassHide.TabIndex = 11;

@@ -195,7 +195,9 @@ namespace CRUD
                 MessageBoxIcon.Question);
             if (userExit == DialogResult.Yes)
             {
-                Application.Exit();
+                this.Close();
+                var login = new Login();
+                login.Show();
             }
             // else
             // {
@@ -203,6 +205,13 @@ namespace CRUD
             //     var login = new Login();
             //     login.ShowDialog();
             // }
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            var changePassword = new ChangePassword();
+            changePassword.Show();
         }
     }
 }

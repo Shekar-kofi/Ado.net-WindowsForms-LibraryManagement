@@ -83,7 +83,7 @@ namespace CRUD
             this.tbMail.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbMail.Location = new System.Drawing.Point(292, 51);
             this.tbMail.Name = "tbMail";
-            this.tbMail.Size = new System.Drawing.Size(295, 36);
+            this.tbMail.Size = new System.Drawing.Size(363, 36);
             this.tbMail.TabIndex = 4;
             this.tbMail.TextChanged += new System.EventHandler(this.tbMail_TextChanged);
             // 
@@ -93,7 +93,7 @@ namespace CRUD
             this.tbPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbPassword.Location = new System.Drawing.Point(292, 144);
             this.tbPassword.Name = "tbPassword";
-            this.tbPassword.Size = new System.Drawing.Size(295, 36);
+            this.tbPassword.Size = new System.Drawing.Size(363, 36);
             this.tbPassword.TabIndex = 5;
             this.tbPassword.UseSystemPasswordChar = true;
             this.tbPassword.TextChanged += new System.EventHandler(this.tbPassword_TextChanged);
@@ -104,7 +104,7 @@ namespace CRUD
             this.tbconfirmPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbconfirmPass.Location = new System.Drawing.Point(292, 263);
             this.tbconfirmPass.Name = "tbconfirmPass";
-            this.tbconfirmPass.Size = new System.Drawing.Size(295, 36);
+            this.tbconfirmPass.Size = new System.Drawing.Size(363, 36);
             this.tbconfirmPass.TabIndex = 6;
             this.tbconfirmPass.UseSystemPasswordChar = true;
             this.tbconfirmPass.TextChanged += new System.EventHandler(this.tbconfirmPass_TextChanged);

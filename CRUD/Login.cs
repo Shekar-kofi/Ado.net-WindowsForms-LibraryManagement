@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Drawing;
-using System.Net.Mail;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
+using Fare;
 using MimeKit;
-using MailKit.Net.Smtp;
 using MySqlConnector;
 using SmtpClient = MailKit.Net.Smtp.SmtpClient;
 
@@ -16,6 +15,10 @@ namespace CRUD
             "server=localhost;user=root;database=lms;port=3306;password=Shekar@2901";
 
         private static int _loginCount = 0;
+
+        public static string LoginMail = "";
+        public static string RecoverPassword = "";
+        
         
         public Login()
         {
@@ -77,12 +80,12 @@ namespace CRUD
 
         }
 
-        private string UserPasswordVerify()
+        public string UserPasswordVerify()
         {
             var connection = new MySqlConnection(_connectionString);
             try
             {
-                connection.Open();
+                connection.Open(); 
                 string passwordverify =
                     $"select count(*) from lmsusers where Usermail='{tbMailLogin.Text}' and binary Password='{tbPassLogin.Text}'";
                 var cmd = new MySqlCommand(passwordverify, connection);
@@ -103,17 +106,27 @@ namespace CRUD
 
         }
 
+        private string GenerateRandomPassword()
+        {
+            Xeger xeger =
+                new Xeger(@"^([A-Z])([a-zA-Z0-9]{5})([!@#%*$?+-])([0-9]{4})$",new Random());
+            return xeger.Generate();
+        }
+
 
         private void PasswordRecover()
         {
+            
+            
             MimeMessage message = new MimeMessage();
             message.From.Add(new MailboxAddress("Recover password test","shekarchepala119@gmail.com"));
-            message.To.Add(MailboxAddress.Parse("shekar.chepala@amzur.com"));
+            message.To.Add(MailboxAddress.Parse($@"{tbMailLogin.Text}"));
             
             message.Subject = "Password Recover Test";
+            RecoverPassword = GenerateRandomPassword();
             message.Body = new TextPart("Plain")
             {
-                Text = "hello this is test"
+                Text = $"Password is :{RecoverPassword} "
             };
 
             SmtpClient client = new SmtpClient();
@@ -125,7 +138,8 @@ namespace CRUD
             }
             catch (Exception e)
             {
-                Console.WriteLine(e.Message);
+                MessageBox.Show(e.Message);
+                MessageBox.Show(e.StackTrace);
             }
             client.Disconnect(true);
             client.Dispose();
@@ -159,6 +173,24 @@ namespace CRUD
             
         }
 
+
+        private void ForgotPassword()
+        {
+            var connection = new MySqlConnection(_connectionString);
+            try
+            {
+                connection.Open();
+                var sql = $"UPDATE `lms`.`lmsusers` SET `Password` = '{RecoverPassword}' WHERE (`Usermail` = '{tbMailLogin.Text}')";
+                var cmd = new MySqlCommand(sql, connection);
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+            connection.Close();
+        }
+
         private void tbPassLogin_TextChanged(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(tbPassLogin.Text))
@@ -188,8 +220,10 @@ namespace CRUD
 
             private void btLogin_Click(object sender, EventArgs e) 
             {
+                
                 if (!string.IsNullOrEmpty(UserPasswordVerify()))
             {
+                LoginMail = tbMailLogin.Text;
                 this.Hide();
                 MessageBox.Show(@"Login Success");
                 var library = new Form1();
@@ -212,9 +246,11 @@ namespace CRUD
                 lbLoginpass.Visible = true;
                 lbLoginpass.ForeColor = Color.Red;
                 errorProvider1.SetError(tbPassLogin,"password does not match");
-                errorProvider2.SetError(tbPassLogin,""); 
+                errorProvider2.SetError(tbPassLogin,"");
+                
                 // tbPassLogin_TextChanged(sender, e);
                 MessageBox.Show(@"Invalid Email address or Password.Please try again");
+                tbPassLogin.Text = "";
 
             } 
         }
@@ -239,10 +275,15 @@ namespace CRUD
 
         private void linkForgot_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            PasswordRecover();
+            ForgotPassword();
+            LoginMail = tbMailLogin.Text;
             this.Hide();
             var forgotPassword = new ForgotPassword();
             forgotPassword.Show();
             
         }
+
+        
     }
 }

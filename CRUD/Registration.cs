@@ -64,10 +64,10 @@ namespace CRUD
 
         }
 
-        private string PasswordValidate()
+        public string PasswordValidate(string userPassword )
         {
             var passwordPattern = "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@!$-&_])[a-zA-Z0-9@!$-&_]{8,15}$";
-            var passwordMatch = Regex.Match(tbPassword.Text, passwordPattern);
+            var passwordMatch = Regex.Match(userPassword, passwordPattern);
             if (passwordMatch.Success)
             {
                 return "passed";
@@ -114,7 +114,7 @@ namespace CRUD
 
         private void tbPassword_TextChanged(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(PasswordValidate()))
+            if (!string.IsNullOrEmpty(PasswordValidate(tbPassword.Text)))
             {
                 errorProvider1.SetError(tbPassword, "");
                 errorProvider2.SetError(tbPassword, "correct");
@@ -158,7 +158,7 @@ namespace CRUD
             try
             { 
                 if (!string.IsNullOrEmpty(EmailMatch()) 
-                  && !string.IsNullOrEmpty(PasswordValidate())
+                  && !string.IsNullOrEmpty(PasswordValidate(tbPassword.Text))
                   && (tbPassword.Text == tbconfirmPass.Text))
                 {
                     connection.Open();

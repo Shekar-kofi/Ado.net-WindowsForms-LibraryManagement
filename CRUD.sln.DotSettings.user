@@ -3,11 +3,19 @@
   &lt;Assembly Path="C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Debug\CRUD.exe" /&gt;&#xD;
   &lt;Assembly Path="C:\Windows\Microsoft.NET\assembly\GAC_32\mscorlib\v4.0_4.0.0.0__b77a5c561934e089\mscorlib.dll" /&gt;&#xD;
 &lt;/AssemblyExplorer&gt;</s:String>
-	<s:Boolean x:Key="/Default/Environment/Hierarchy/Build/SolutionBuilderNext/InvokePreAndPostBuildEventTargetsForSkippedProjects/@EntryValue">True</s:Boolean>
-	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=CRUD_002FChange_0020Password/@EntryIndexedValue">True</s:Boolean>
-	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=CRUD_002FForgotPassword/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/Environment/Hierarchy/Build/BuildTool/CustomBuildToolPath/@EntryValue">C:\Program Files\JetBrains\JetBrains Rider 2022.3.2\tools\MSBuild\Current\Bin\amd64\MSBuild.exe</s:String>
 	
+	<s:Boolean x:Key="/Default/Environment/Hierarchy/Build/SolutionBuilderNext/InvokePreAndPostBuildEventTargetsForSkippedProjects/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=CRUD_002FChange_0020Password/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=CRUD_002FForgotPassword/@EntryIndexedValue">False</s:Boolean>
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=CRUD_002FForm1/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=CRUD_002FLogin/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=CRUD_002FProperties_002FResources/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=CRUD_002FRegistration/@EntryIndexedValue">False</s:Boolean>
+	
+	
+	
+	
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/Initialized/@EntryValue">True</s:Boolean>
 	
 	

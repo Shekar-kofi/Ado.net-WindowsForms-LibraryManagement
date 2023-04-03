@@ -5,17 +5,18 @@ C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Release\System.Diagnostics.Diagnost
 C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Release\System.Memory.dll
 C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Release\System.Threading.Tasks.Extensions.dll
+C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Release\MailKit.dll
+C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Release\MimeKit.dll
+C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Release\Fare.dll
 C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Release\CRUD.exe.config
 C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Release\BouncyCastle.Crypto.dll
 C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Release\Google.Protobuf.dll
 C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Release\K4os.Compression.LZ4.dll
 C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Release\K4os.Compression.LZ4.Streams.dll
 C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Release\K4os.Hash.xxHash.dll
-C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Release\MailKit.dll
 C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Release\Microsoft.Win32.Registry.AccessControl.dll
 C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Release\Microsoft.Win32.Registry.dll
 C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Release\Microsoft.Win32.SystemEvents.dll
-C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Release\MimeKit.dll
 C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Release\Newtonsoft.Json.dll
 C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Release\RestSharp.dll
 C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Release\System.Buffers.dll
@@ -51,6 +52,7 @@ C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Release\System.Threading.AccessCont
 C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Release\System.Web.Services.Description.dll
 C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Release\ZstdNet.dll
 C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Release\BouncyCastle.Crypto.xml
+C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Release\Fare.xml
 C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Release\Google.Protobuf.pdb
 C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Release\Google.Protobuf.xml
 C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Release\K4os.Compression.LZ4.xml
@@ -103,6 +105,8 @@ C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Release\System.Threading.Tasks.Exte
 C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Release\System.Web.Services.Description.pdb
 C:\Users\ShekarC\RiderProjects\CRUD\CRUD\obj\Release\CRUD.csproj.AssemblyReference.cache
 C:\Users\ShekarC\RiderProjects\CRUD\CRUD\obj\Release\CRUD.csproj.SuggestedBindingRedirects.cache
+C:\Users\ShekarC\RiderProjects\CRUD\CRUD\obj\Release\CRUD.ChangePassword.resources
+C:\Users\ShekarC\RiderProjects\CRUD\CRUD\obj\Release\CRUD.ForgotPassword.resources
 C:\Users\ShekarC\RiderProjects\CRUD\CRUD\obj\Release\CRUD.Form1.resources
 C:\Users\ShekarC\RiderProjects\CRUD\CRUD\obj\Release\CRUD.Login.resources
 C:\Users\ShekarC\RiderProjects\CRUD\CRUD\obj\Release\CRUD.Properties.Resources.resources
@@ -112,8 +116,3 @@ C:\Users\ShekarC\RiderProjects\CRUD\CRUD\obj\Release\CRUD.csproj.CoreCompileInpu
 C:\Users\ShekarC\RiderProjects\CRUD\CRUD\obj\Release\CRUD.csproj.CopyComplete
 C:\Users\ShekarC\RiderProjects\CRUD\CRUD\obj\Release\CRUD.exe
 C:\Users\ShekarC\RiderProjects\CRUD\CRUD\obj\Release\CRUD.pdb
-C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Release\CRUD.pdb
-C:\Users\ShekarC\RiderProjects\CRUD\CRUD\obj\Release\CRUD.ForgotPassword.resources
-C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Release\Fare.dll
-C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Release\Fare.xml
-C:\Users\ShekarC\RiderProjects\CRUD\CRUD\obj\Release\CRUD.ChangePassword.resources

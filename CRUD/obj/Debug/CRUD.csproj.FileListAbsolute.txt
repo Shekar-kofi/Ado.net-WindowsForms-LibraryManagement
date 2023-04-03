@@ -114,3 +114,6 @@ C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Debug\MailKit.xml
 C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Debug\MimeKit.pdb
 C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Debug\MimeKit.xml
 C:\Users\ShekarC\RiderProjects\CRUD\CRUD\obj\Debug\CRUD.ForgotPassword.resources
+C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Debug\Fare.dll
+C:\Users\ShekarC\RiderProjects\CRUD\CRUD\bin\Debug\Fare.xml
+C:\Users\ShekarC\RiderProjects\CRUD\CRUD\obj\Debug\CRUD.ChangePassword.resources
